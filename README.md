@@ -5,4 +5,4 @@ Zamanın hayatta geri dönüşümü olmayan yegane şey olduğunun sembolünü p
 Arka plan için attığım resmi images klasöründen değiştirebilirsiniz. 
 Akrep ve yelkovanın boyutu ve rengini de style etiketi içerisinden değiştirebilirsiniz.
 
-[Image of OSYM Clock / ÖSYM Saatinin Görüntüsü ](www.google.com)
+[Image of OSYM Clock / ÖSYM Saatinin Görüntüsü ](https://github.com/ademcinarci/htmlclock/blob/master/read.PNG)
