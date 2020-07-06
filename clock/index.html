@@ -1,0 +1,140 @@
+<html>
+    <head>
+
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #091921;
+            }
+            .saat{
+                width: 350px;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url(    images/clock.png);
+                background-size: cover;
+                border: 4px solid #091921;
+                border-radius: 50%;
+                
+            }
+
+            .saat:before{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: #7d7d7d;
+                border-radius: 50%;
+                z-index: 10000;
+            }
+            
+            .saat .akrep,
+            .saat .yelkovan,
+            .saat .ibre {
+                position: absolute;
+            }
+            .saat .akrep, .st {
+                width: 160px;
+                height: 160px;
+            }
+            .saat .yelkovan, .dk {
+                width: 190px;
+                height: 190px;
+            }
+            .saat .ibre, .sn {
+                width: 230px;
+                height: 230px;
+            }
+            .st, .dk, .sn {
+                display: flex;
+                justify-content: center;
+                /*align-items: center;*/
+                position: absolute;
+                border-radius: 50%;
+            }
+            .st:before
+            {
+                content: '';
+                position: absolute;
+                width: 9px;
+                height: 80px;
+                background: #000000;
+                z-index: 10;
+                border-radius: 3px 3px 0 0;
+            }
+            .dk:before
+            {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 90px;
+                background: rgb(0, 0, 0);
+                border-radius: 2px 2px 0 0;
+                z-index: 11;
+            }
+            
+            .sn:before
+            {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 150px;
+                background: rgb(0, 0, 0);
+                border-radius: 6px 6px 0 0;
+                z-index: 12;
+            }
+            .adem{
+                color: #fff;
+                font-family: monospace;
+                position: relative;
+                top: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="saat">
+            <div class="akrep">
+            <div class="st" id="saat"></div>
+            </div>
+            <div class="yelkovan">
+                <div class="dk" id="dakika"></div>
+                </div>
+            <div class="ibre">
+                <div class="sn" id="saniye"></div>
+            </div>
+            
+        <p class="adem">Coded by Adem Çınarcı 2020</p>
+        </div>
+        <script type="text/javascript">
+            const deg = 6;
+            const saat = document.querySelector('#saat');
+            const dakika = document.querySelector('#dakika');
+            const saniye = document.querySelector('#saniye');
+
+            setInterval (() => {
+
+            
+            var day = new Date();
+            var hh = day.getHours() * 30;
+            var mm = day.getMinutes() * deg;
+            var ss = day.getSeconds() * deg;
+
+            saat.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+            dakika.style.transform = `rotateZ(${mm}deg)`;
+            saniye.style.transform = `rotateZ(${ss}deg)`;
+        })
+            
+        </script>
+    </body>
+</html>
