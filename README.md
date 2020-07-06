@@ -1,4 +1,4 @@
-# htmlclock
+# HTML CLOCK / HTML ÖSYM SAATİ
 Üniversite sınavından çıkalı bir hafta olmadığı için bu manidar saati geliştirdim. 
 Zamanın hayatta geri dönüşümü olmayan yegane şey olduğunun sembolünü paylaşıyorum. 
 İsteyenler indirip üzerinde istediği düzenlemeyi yapabilirler. 
